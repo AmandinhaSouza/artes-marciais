@@ -1,5 +1,8 @@
 <html>
  <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>LOGIN</title>
       <style>
 	     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,500&display=swap');
 		  
@@ -56,37 +59,32 @@
 		 
 		}
       </style>
-      <title>LOGIN</title>
+      
  </head>
   <body>
       <form>
 	     <h3> Entrar</h3>
 		 <input type="text"name="texto" placeholder="nome de usuário..." id="log"/>
 		 <input type="password"name="senha" placeholder="sua senha..." id="senha"/>
-		 <input type="submit" value="Entrar" onclick="entrar()">
+		 <input type="submit" value="Entrar" onclick="entrar()"/>
 	  </form>
 	  
 	  <script>
 		function entrar(){
 		     const usuarioColocado = document.getElementById("log")
-	             const senhaColocada = document.getElementById("senha")
+	      const senhaColocada = document.getElementById("senha")
 	 
 		     const usuario1 = 'rayssa'
 		     const usuario2 = ''
 		     const senha1 = '12345'
 		     const senha2 = ''
 		     
-			    if(usuarioColocado.value === usuario1){
-                                  if(senhaColocada.value === senha1){
-			               window.location= './cadastro.html'
-			          }
-                            }
-			    
-			    if(usuarioColocado.value === usuario2){
-                                  if(senhaColocada.value === senha2){
-			               window.location= './cadastro.html'
-			          }
-                            }
+			    if(usuarioColocado.value === usuario1 && senhaColocada.value === senha1){
+			        window.location= 'cadastro.html'
+			    }
+			    if(usuarioColocado.value === usuario2 && senhaColocada.value === senha2){
+			        window.location= 'cadastro.html'
+			    }
 	  	}
 	      
 	  </script> 
