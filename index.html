@@ -67,20 +67,22 @@
 	  </form>
 	  
 	  <script>
-		var emailcolocado= document.getElementById("log")
-		var senhacolocada= document.getElementById("senha")
-		
 		function entrar(){
-			var usuarioCorreta = "rayssa"
-			var senhaCorreta = 12345
-			
-			if (emailcolocado === usuarioCorreta){
-				if (senhacolocada === senhaCorreta ){
-					window.location= "./cadastro.html"
-					console.log("chegou")
-				}
-			}
-		}
+		     const usuarioColocado = document.getElementById("log")
+	      const senhaColocada = document.getElementById("senha")
+	 
+		     const usuario1 = 'rayssa'
+		     const usuario2 = ''
+		     const senha1 = '12345'
+		     const senha2 = ''
+		     
+			    if(usuarioColocado.value === usuario1 && senhaColocada.value === senha1){
+			        window.location= "./cadastro.html"
+			    }
+			    if(usuarioColocado.value === usuario2 && senhaColocada.value === senha2){
+			        window.location= "./cadastro.html"
+			    }
+	  	}
 	      
 	  </script> 
   </body>
