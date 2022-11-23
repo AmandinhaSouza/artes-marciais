@@ -69,19 +69,24 @@
 	  <script>
 		function entrar(){
 		     const usuarioColocado = document.getElementById("log")
-	      const senhaColocada = document.getElementById("senha")
+	             const senhaColocada = document.getElementById("senha")
 	 
 		     const usuario1 = 'rayssa'
 		     const usuario2 = ''
 		     const senha1 = '12345'
 		     const senha2 = ''
 		     
-			    if(usuarioColocado.value === usuario1 && senhaColocada.value === senha1){
-			        window.location= './cadastro.html'
-			    }
-			    if(usuarioColocado.value === usuario2 && senhaColocada.value === senha2){
-			        window.location= './cadastro.html'
-			    }
+			    if(usuarioColocado.value === usuario1){
+                                  if(senhaColocada.value === senha1){
+			               window.location= './cadastro.html'
+			          }
+                            }
+			    
+			    if(usuarioColocado.value === usuario2){
+                                  if(senhaColocada.value === senha2){
+			               window.location= './cadastro.html'
+			          }
+                            }
 	  	}
 	      
 	  </script> 
